@@ -51,7 +51,7 @@
 /**
  * The image that is currently being displayed.
  */
-@property (nonatomic, readonly) UIImage* image;
+@property (nonatomic, retain) UIImage* image;
 
 /**
  * Override the default sizing operation and resize the frame of this view with the size of
