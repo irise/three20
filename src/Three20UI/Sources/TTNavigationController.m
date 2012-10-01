@@ -56,6 +56,15 @@
   return [super popViewControllerAnimatedWithTransition:transition];
 }
 
+// iOS 6 Support
+
+- (BOOL)shouldAutorotate{
+    return YES;
+}
+-(NSUInteger)supportedInterfaceOrientations{
+    return [self.topViewController supportedInterfaceOrientations];
+}
+
 
 @end
 
